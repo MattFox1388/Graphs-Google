@@ -6,24 +6,18 @@
  */
 package util;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import basicgraph.Graph;
 import geography.GeographicPoint;
 import geography.RoadSegment;
 import roadgraph.MapGraph;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class GraphLoader 
@@ -608,8 +602,8 @@ public class GraphLoader
 		// To use this method to convert your custom map files to custom intersections files
 		// just change YOURFILE in the strings below to be the name of the file you saved.
 		// You can comment out the other method calls above to save time.
-		GraphLoader.createIntersectionsFile("data/maps/YOURFILE.map", 
-					                         "data/intersections/YOURFILE.intersections");
+		GraphLoader.createIntersectionsFile("data/maps/mke.map",
+					                         "data/intersections/mke.intersections");
 
 	}
 	
